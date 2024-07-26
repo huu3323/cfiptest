@@ -35,7 +35,7 @@ func init() {
 	flag.IntVar(&st.DelayTestType, "dtt", 0, "延迟测试类型, 0: http测试 1：tcp测试")
 	flag.IntVar(&st.MaxSpeedTestCount, "maxsc", 10, "速度测试，最多测试多少个IP")
 	flag.IntVar(&st.MaxDelayCount, "maxdc", 0, "延迟测试，最多测试多少个IP，如果不限制则设置为0")
-	flag.Float64Var(&st.MinSpeed, "mins", 1, "最低速度")
+	flag.Float64Var(&st.MinSpeed, "mins"， 15, "最低速度")
 	flag.BoolVar(&st.EnableTLS, "tls", true, "是否启用TLS")
 	flag.BoolVar(&st.Shuffle, "s", false, "是否打乱顺序测速")
 	flag.StringVar(&st.FilterIATA, "iata", "", "使用IATA过滤，多个用英文逗号分隔，例如：HKG,SIN")
